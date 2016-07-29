@@ -1,0 +1,17 @@
+{{#brand_profiles}}
+  <h2>{{data.brand.name}}</h2>
+  <p>Customer since: {{customer_since}}</p>
+  {{#if orders}}
+  <br>
+  <h4>Recent Orders</h4>{{/if}}
+  <ul>
+  {{#orders}}
+    <li>
+      <p>#{{data.order.number}} - {{data.order.date}}</p>
+      <p>Santa Monica</p>
+    </li>
+    <br>
+  {{/orders}}
+  </ul>
+
+{{/brand_profiles}}
